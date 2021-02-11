@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {Componente, Componente1, Componente2} from './components/Componente'
 
 function App() {
   return (
@@ -18,6 +19,17 @@ function App() {
           Learn React
         </a>
       </header>
+      <section>
+        <Componente
+          message='Hola soy un componente de clase'
+        />
+        <Componente1
+          message='Hola soy un componente funcional'
+        />
+        <Componente2
+          message='Hola soy un componente de arrow function'
+        />
+      </section>
     </div>
   );
 }
