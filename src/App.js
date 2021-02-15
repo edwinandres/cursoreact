@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Componente, Componente1, Componente2} from './components/Componente'
+import Propiedades from './components/Propiedades';
 
 function App() {
   return (
@@ -18,7 +19,6 @@ function App() {
         >
           Learn React
         </a>
-      </header>
       <section>
         <Componente
           message='Hola soy un componente de clase'
@@ -29,7 +29,18 @@ function App() {
         <Componente2
           message='Hola soy un componente de arrow function'
         />
+        <Propiedades
+          cadena='Esto es una cadena'
+          numero={9}
+          booleano={true}
+          arreglo={[1,2,3]}
+          objeto={{nombre:'Edwin', edad:38, email:'pazamoryperdon@gmail.com'}}
+          elementoReact={<i>Esto es un elemento react</i>}
+          funcion={num=>num*num}
+          componente={<Componente message='Componente usado como prop' />}
+        />
       </section>
+      </header>
     </div>
   );
 }
