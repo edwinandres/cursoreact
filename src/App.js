@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {Componente, Componente1, Componente2} from './components/Componente'
 import Propiedades from './components/Propiedades';
+import Estado from './components/Estado';
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
           elementoReact={<i>Esto es un elemento react</i>}
           funcion={num=>num*num}
           componente={<Componente message='Componente usado como prop' />}
+        />
+        <hr></hr>
+        <Estado
+        
         />
       </section>
       </header>
